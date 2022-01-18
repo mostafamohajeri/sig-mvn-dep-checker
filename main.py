@@ -109,8 +109,7 @@ def main():
     # print(ext_depend)
     # print([v_attrs[v]['product'] for v in ext_depend])
     # print(len(set([v_attrs[v]['product'] for v in ext_depend])))
-
-    ext_depend_graph = draw_external_dependencies(g, v_attrs)
+    ext_depend_graph = list_external_dependencies(g, v_attrs)
 
 if __name__ == "__main__":
     main()
